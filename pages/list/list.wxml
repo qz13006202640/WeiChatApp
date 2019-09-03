@@ -1,0 +1,26 @@
+<view class="container">
+  <!--文件列表项 -->
+  <template name="listItem">
+  <navigator url="../../pages/index/index?id={{id}}" hover-class="navigator-hover">
+    <view>
+      <image src="{{img}}" mode="aspectFit"></image>
+    </view>
+
+    <view>
+
+      <view>
+        {{title}}
+      </view>
+
+      <view>
+        {{cTime}}
+      </view>
+
+    </view>
+    </navigator>
+  </template>
+  <!--循环输出列表-->
+  <block wx:for="{{newList}}" wx:for-item="news">
+    <template is="listItem" data="{{...news}}"/>
+  </block>
+</view>

@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/list/list",
+    "pages/detial/detial",
+    "pages/aboutme/aboutme",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#232345",
+    "navigationBarTitleText": "昕昱科技",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar":
+  {
+    "color":"#fff",
+    "backgroundColor": "#232345",
+    "list":[
+      {
+        "pagePath":"pages/aboutme/aboutme",
+        "text":"关于我们" ,
+        "iconPath":"image/1.png",
+        "selectedIconPath":"image/1s.png"
+      },
+      {
+        "pagePath":"pages/list/list",
+        "text":"新闻列表",
+        "iconPath":"image/2.png",
+        "selectedIconPath": "image/2s.png"      
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}
