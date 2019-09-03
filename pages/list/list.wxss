@@ -1,1 +1,36 @@
 /* pages/list/list.wxss */
+.list{
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+navigator{overflow: hidden;}
+
+.newslist{
+margin-bottom: 20px;
+height: 100px;
+position: relative;
+}
+
+.imgs
+{
+float: left;
+
+}
+.info
+{
+  float: left;
+  height: 100px;
+  padding: 20px 0 0 20px;
+}
+.title
+{
+  font-size: 20px;
+}
+.time{
+  font-size:16px;
+  color: #aaa;
+  position: relative;
+  bottom: -20px; }

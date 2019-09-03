@@ -1,0 +1,37 @@
+/* pages/listitem/listitem.wxss */
+.listitem
+{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.title
+{
+  text-align: center;
+  padding: 20px;
+  font-size: 20px;
+  font-family: 黑体;
+  font-style: blod;
+}
+
+.time
+{
+  color: #aaa;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.img
+{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.content
+{
+  text-indent: 2em;
+  line-height: 1.2;
+  font-size: 16px;
+}

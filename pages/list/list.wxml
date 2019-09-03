@@ -1,26 +1,26 @@
-<view class="container">
+<view class="list">
   <!--文件列表项 -->
   <template name="listItem">
-  <navigator url="../../pages/index/index?id={{id}}" hover-class="navigator-hover">
-    <view>
-      <image src="{{img}}" mode="aspectFit"></image>
-    </view>
-
-    <view>
-
-      <view>
-        {{title}}
+    <navigator url="../../pages/listitem/listitem?id={{id}}" hover-class="navigator-hover">
+      <view class="imgs">
+        <image src="{{img}}" style="width: 100px; height: 100px;" mode="aspectFit" ></image>
       </view>
 
-      <view>
-        {{cTime}}
-      </view>
+      <view class="info">
 
-    </view>
+        <view class="title">
+          {{title}}
+        </view>
+
+        <view class="time">
+          {{cTime}}
+        </view>
+
+      </view>
     </navigator>
   </template>
   <!--循环输出列表-->
-  <block wx:for="{{newList}}" wx:for-item="news">
-    <template is="listItem" data="{{...news}}"/>
+  <block wx:for="{{newList}}" wx:for-item="news" class="newslist">
+    <template is="listItem" data="{{...news}}" />
   </block>
 </view>

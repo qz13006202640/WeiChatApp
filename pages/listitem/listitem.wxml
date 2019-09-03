@@ -1,0 +1,19 @@
+<view class="listitem">
+
+  <view class="title">
+    {{info.title}}
+  </view>
+
+   <view class="time">
+    {{info.cTime}}
+  </view>
+
+   <view class="img">
+   <image src="{{info.img}}" class="in-img" mode="aspectFit"></image>
+  </view>
+
+   <view class="content">
+    {{info.content}}
+  </view>
+
+</view>
